@@ -1,13 +1,13 @@
 .registration-form{
     width : 800px;
-    Margin : 35px auto;
+    Margin : 30px auto;
 }
 
 .h2{
     margin-bottom : 30px;
 }
 .your-details{
-    margin-bottom : 20px;
+    margin-bottom : 10px;
 }
 .section{
     Margin : auto;
@@ -17,5 +17,5 @@
     margin-left: 10px;
 }
  .gender-section{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
  }

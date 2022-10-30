@@ -16,8 +16,8 @@ function validate(isSubmitted = false) {
   }
 
   if (globalIsSubmitted) {
-    let candidateFirstName = parseInt(firstName);
-    if (firstName.length >= 3 && isNaN(candidateFirstName)) {
+    var candidateFirstName =  /^[a-zA-Z]*$/;
+    if (firstName.length >= 3 && isNaN(firstName) && firstName.match(candidateFirstName)) {
       document.getElementById("first-name-valid").style.display = "block";
       document.getElementById("first-name-invalid").style.display = "none";
     } else {
@@ -26,8 +26,8 @@ function validate(isSubmitted = false) {
       error = true;
     }
 
-    let candidateLastName = parseInt(lastName);
-    if (lastName.length >= 3 && isNaN(candidateLastName)) {
+    var candidateLastName =  /^[a-zA-Z]*$/;
+    if (lastName.length >= 3 && isNaN(lastName) && lastName.match(candidateLastName)) {
       document.getElementById("last-name-valid").style.display = "block";
       document.getElementById("last-name-invalid").style.display = "none";
     } else {
